@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Loja da Karina - Presenteie quem você ama!</title>
+
+	<link rel="icon" href="assets/img/favicon.ico">
+	<link rel="apple-touch-icon" href="assets/img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon.icog">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon.ico">
+
+	<link rel='stylesheet' href='assets/css/global.css'>
+	<link rel='stylesheet' href='assets/css/bundle.css'>
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<script defer src='assets/js/bundle.js'></script>
+</head>
+
+<body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function () {
+				let scroll_link = $('.scroll');
+
+				//smooth scrolling -----------------------
+				scroll_link.click(function (e) {
+					e.preventDefault();
+					// console.log($('body').find($(this).attr('href')));
+					try {
+						let url = $('body').find($(this).attr('href')).offset().top;
+						$('html, body').animate({
+							scrollTop: url
+						}, 700);
+						
+					} catch (error) {
+						window.location.href = '/#contatos';
+					}
+					$(this).parent().addClass('active');
+					$(this).parent().siblings().removeClass('active');
+					return false;
+				});
+			});	
+	</script>
+</body>
+</html>
