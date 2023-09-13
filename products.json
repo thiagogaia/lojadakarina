@@ -2,5 +2,6 @@
     {"code": 1, "name": "Cesta Luxo Italian", "price": 280.00, "image": "assets/img/imgcesta.jpeg"},
     {"code": 2, "name": "Cesta Namorados", "price": 390.00, "image": "assets/img/imgcesta2.jpeg"},
     {"code": 3, "name": "Cesta Luxo Franch", "price": 579.90, "image": "assets/img/imgcesta.jpeg"},
-    {"code": 4, "name": "Cesta Luxo Spain", "price": 177.99, "image": "assets/img/imgcesta2.jpeg"}
+    {"code": 4, "name": "Cesta Luxo Spain", "price": 177.99, "image": "assets/img/imgcesta2.jpeg"},
+    {"code": 5, "name": "Bah Meo", "price": 77.99, "image": "assets/img/imgcesta.jpeg"}
 ]
